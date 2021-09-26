@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="..\CSS\style.css" />
+    <title>NoteTakingApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <img src="../Pictures/notehead.png" alt="Note pic" srcset="" />
+          NoteTaking App
+        </ul>
+      </div>
+      <div class="coverBox">
+        <div class="noteAdd">
+          <div class="headingForNotes">
+            <img src="..\Pictures\headingHeart.png" alt="heading" />
+            <input
+              type="text"
+              name=""
+              id="heading"
+              placeholder="Give some Title.."
+            />
+          </div>
+          <div class="textArea">
+            <textarea name="" id="textarea"></textarea>
+          </div>
+          <div class="outerBtn">
+            <div class="button">
+              <img src="..\Pictures\NoteAdd.png" alt="" /><input
+                type="button"
+                value="Add Note"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="notePlaced" id="noteShow"></div>
+      </div>
+    </div>
+  </body>
+  <script src="..\JS\note.js"></script>
+</html>

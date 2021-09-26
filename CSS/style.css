@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+  /* overflow-x: hidden; */
+  /* background-color: aliceblue; */
+}
+
+.coverBox {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* nav bar */
+.nav {
+  height: 3rem;
+  width: 100%;
+  background-color: #3498db;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav ul {
+  width: 25rem;
+  height: 2rem;
+  font-size: 23px;
+  font-weight: 400;
+  /* margin-right: 47rem; */
+  color: #ecf0f1;
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+/* Note Taking Area */
+.noteAdd {
+  width: 100%;
+  height: 18rem;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.headingForNotes {
+  width: 35rem;
+  height: 3rem;
+  background-color: #e3eaf0;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.headingForNotes input {
+  height: 33px;
+  width: 30rem;
+  font-size: medium;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.headingForNotes img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Text Area */
+#textarea {
+  width: 35rem;
+  min-height: 7rem;
+  resize: none;
+  outline: none;
+  font-size: medium;
+  padding: 10px;
+}
+
+.button {
+  width: 8.5rem;
+  height: 2.3rem;
+  padding: 0 10px 0 10px;
+  background-color: #65b2e6;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.button input {
+  width: 6rem;
+  height: 2rem;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+.button img {
+  width: 25px;
+  height: 25px;
+}
+.outerBtn {
+  width: 35rem;
+}
+/* notePlaced */
+
+.notePlaced {
+  width: 100%;
+  height: 82rem;
+  display: flex;
+  padding: 1rem;
+  /* align-items: center; */
+  justify-content: flex-start;
+  background-color: burlywood;
+}
+
+/* Note Card */
+
+.outerPlaced {
+  width: 16rem;
+  height: 14rem;
+  margin: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* background-color: cadetblue; */
+}
+
+.noteCard {
+  width: 100%;
+  height: 16rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgray;
+}
+.noteCardTitle {
+  width: 100%;
+  height: 2.1rem;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: medium;
+  font-weight: bold;
+  background-color: rgb(53, 197, 207);
+}
+#noteArea {
+  width: 100%;
+  min-height: 8.6rem;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: medium;
+  padding: 11px;
+}
+
+.cardButton {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
+.cardButton img {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+/* .cardButton img:hover {
+  width: 32px;
+  height: 32px;
+} */
+.noteContent {
+  width: 100%;
+  height: 13.9rem;
+  background-color: rgb(53, 197, 207);
+}
