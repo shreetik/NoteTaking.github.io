@@ -65,9 +65,9 @@ function createNote() {
       </div>
     </div>
     <div class="cardButton">
-      <img src="../Pictures/editNote.png" onclick="editNote(this.id)" id=${indexForDel} alt="" />
-      <img src="../Pictures/UpdateNote.png" onclick="updateNote(this.id)" id=${indexForDel} alt="" />
-      <img src="../Pictures/deleteNote.png" onclick="deleteNote(this.id)" id=${indexForDel} alt="" />
+      <img src="Pictures/editNote.png" onclick="editNote(this.id)" id=${indexForDel} alt="" />
+      <img src="Pictures/UpdateNote.png" onclick="updateNote(this.id)" id=${indexForDel} alt="" />
+      <img src="Pictures/deleteNote.png" onclick="deleteNote(this.id)" id=${indexForDel} alt="" />
     </div>
   </div>`;
     holdSecondArray.pop();
