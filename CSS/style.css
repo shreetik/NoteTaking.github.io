@@ -218,6 +218,9 @@ body::-webkit-scrollbar {
   font-size: medium;
   padding: 11px;
 }
+.not {
+  pointer-events: none;
+}
 
 .cardButton {
   width: 100%;

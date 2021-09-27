@@ -2,10 +2,9 @@ console.log("Jay Jagannath");
 
 createNote();
 
-var notr = document.querySelectorAll("[class='not']");
-notr.forEach((value) => {
-  value.readOnly = true;
-});
+// notr.forEach((value) => {
+//   value.readOnly = true;
+// });
 // noteA = document.querySelector(".not");
 // console.log(noteA);
 // noteA.readOnly = true;
@@ -139,11 +138,14 @@ function deleteNote(indNote) {
 }
 
 //edit Note Function
+
 function editNote(editC) {
-  notr[editC].readOnly = false;
+  let notr = document.querySelectorAll("[class='not']");
+  notr[editC].classList.remove("not");
 }
 function closeNote(cnote) {
-  notr[cnote].readOnly = true;
+  let notrr = document.querySelectorAll("[id='noteArea']");
+  notrr[cnote].classList.add("not");
 }
 
 //Update Note Function
@@ -154,18 +156,20 @@ function getTxtData(xyz) {
 }
 var holdArray = [];
 function updateNote(upcode) {
-  localNoteArray[upcode].forEach((value, index) => {
-    holdArray.push(value);
-  });
-  let holdtitle = holdArray[0];
-  let holddata = actualTxtData;
-  holdArray.pop();
-  holdArray.pop();
-  let putTogether = [holdtitle, holddata];
-  localNoteArray[upcode] = putTogether;
-  localStorage.setItem("localkey", JSON.stringify(localNoteArray));
-  createNote();
-  console.log(putTogether);
+  if (actualTxtData != null) {
+    localNoteArray[upcode].forEach((value, index) => {
+      holdArray.push(value);
+    });
+    let holdtitle = holdArray[0];
+    let holddata = actualTxtData;
+    holdArray.pop();
+    holdArray.pop();
+    let putTogether = [holdtitle, holddata];
+    localNoteArray[upcode] = putTogether;
+    localStorage.setItem("localkey", JSON.stringify(localNoteArray));
+    createNote();
+  }
+
   // txtArea = document.querySelectorAll("[id='noteArea']");
   // txtAreaData = txtArea[upcode].innerHTML;
   // console.log(txtAreaData);
