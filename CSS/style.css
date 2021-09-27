@@ -142,7 +142,7 @@ body::-webkit-scrollbar {
 
 .notePlaced {
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   padding: 1rem;
   overflow-x: hidden;
