@@ -151,6 +151,28 @@ body::-webkit-scrollbar {
   flex-wrap: wrap;
   /* background-color: burlywood; */
   background-color: #607d8b;
+
+  opacity: 1;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #607d8b 20%,
+      #607d8b 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #607d8b 20%,
+        #607d8b 80%,
+        transparent 80%,
+        transparent
+      )
+      10px 10px,
+    linear-gradient(#8d8fb7 0.8px, transparent 0.8px) 0 -0.4px,
+    linear-gradient(90deg, #8d8fb7 0.8px, #607d8b 0.8px) -0.4px 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
 }
 
 /* Note Card */
@@ -161,6 +183,7 @@ body::-webkit-scrollbar {
   margin: 2rem;
   overflow: hidden;
   display: flex;
+  border-radius: 3px;
   /* flex: 1; */
   flex-direction: column;
   /* background-color: cadetblue; */
@@ -236,5 +259,11 @@ body::-webkit-scrollbar {
   }
   .outerBtn {
     width: 20rem;
+  }
+
+  .notePlaced {
+    /* display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end; change */
   }
 }
