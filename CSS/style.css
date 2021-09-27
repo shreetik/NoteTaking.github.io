@@ -31,8 +31,8 @@ body::-webkit-scrollbar {
 .nav {
   height: 3rem;
   width: 100%;
-  background-color: #3498db;
-
+  /* background-color: #3498db; */
+  background-color: #0091ea;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
   /* background-color: bisque; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .nav ul img {
@@ -60,7 +60,8 @@ body::-webkit-scrollbar {
 .noteAdd {
   width: 100%;
   height: 18rem;
-  background-color: beige;
+  /* background-color: beige; */
+  background-color: #6dc0e6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,6 +78,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: space-evenly;
 }
+
 .headingForNotes input {
   height: 33px;
   width: 30rem;
@@ -97,15 +99,22 @@ body::-webkit-scrollbar {
   min-height: 7rem;
   resize: none;
   outline: none;
+  border: none;
+  border-radius: 4px;
   font-size: medium;
   padding: 10px;
+}
+#textarea:focus {
+  border: 1px solid dodgerblue;
+  box-shadow: 0 0 3.5px 0 dodgerblue;
 }
 
 .button {
   width: 8.5rem;
   height: 2.3rem;
   padding: 0 10px 0 10px;
-  background-color: #65b2e6;
+  /* background-color: #65b2e6; */
+  background-color: #3893f5;
   border-radius: 2px;
   cursor: pointer;
   display: flex;
@@ -115,7 +124,7 @@ body::-webkit-scrollbar {
 .button input {
   width: 6rem;
   height: 2rem;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   cursor: pointer;
   border: none;
@@ -140,7 +149,8 @@ body::-webkit-scrollbar {
   /* align-items: center; */
   justify-content: flex-start; /*change*/
   flex-wrap: wrap;
-  background-color: burlywood;
+  /* background-color: burlywood; */
+  background-color: #607d8b;
 }
 
 /* Note Card */
@@ -173,7 +183,8 @@ body::-webkit-scrollbar {
   justify-content: flex-start;
   font-size: medium;
   font-weight: bold;
-  background-color: rgb(53, 197, 207);
+  background-color: #0091ea;
+  color: white;
 }
 #noteArea {
   width: 100%;
@@ -206,7 +217,7 @@ body::-webkit-scrollbar {
 .noteContent {
   width: 100%;
   height: 13.9rem;
-  background-color: rgb(53, 197, 207);
+  background-color: #0091ea;
 }
 
 @media (max-width: 998px) {
